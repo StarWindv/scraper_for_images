@@ -26,6 +26,10 @@ def get_f1_links(driver, url):
         print(f"正在进行第{_}次翻页\n")
         body = driver.find_element("tag name", "body")
         body.send_keys(Keys.PAGE_DOWN)
+    if os.name =='nt':
+        os.system("cls")
+    else:
+        os.system("clear")
     time.sleep(3)
     page_source = driver.page_source  # 获取页面源码
 
