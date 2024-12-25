@@ -1,3 +1,6 @@
+# MIT License
+# Copyright (c) 2024 StarWindv
+
 import time
 import os
 import requests

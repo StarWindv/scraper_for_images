@@ -1,3 +1,6 @@
+# MIT License
+# Copyright (c) 2024 StarWindv
+
 import os
 
 def rename_photos(folder_path):
