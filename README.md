@@ -4,7 +4,7 @@
 
 ## 项目简介
 
-`bing_ima` 是一个用于下载图片的Python项目，它可以从网络上下载指定关键词的图片，并提供去重和重命名的功能。
+`bing_ima` 是一个用于下载图片的Python项目，它可以从网络(我使用的是bing)上下载指定关键词的图片，并提供去重和重命名的功能。
 
 ## 文件结构
 
@@ -23,7 +23,7 @@ bing_ima/
 在运行脚本之前，需要安装必要的Python库。可以通过以下命令安装：
 
 ```bash
-pip install -r requirements.txt
+pip install requests selenium
 ```
 
 ### 运行脚本
