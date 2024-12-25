@@ -103,7 +103,6 @@ def download_images_in_parallel(f1_links, save_directory, page_num):
 
                 # 每下载200张图片进行一次垃圾回收
                 if image_count % 200 == 0:
-                    print(f"已下载 {image_count} 张图片，进行垃圾回收...")
                     gc.collect()
 
         for future in futures:
