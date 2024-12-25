@@ -5,7 +5,8 @@ from head import *
 import warnings
 
 warnings.filterwarnings("ignore", message="Corrupt EXIF data.*")
-BLOCKED_DOMAINS = ["p3-pc-sign.douyinpic.com", "ts1.cn.mm.bing.net"]
+BLOCKED_DOMAINS = ["p3-pc-sign.douyinpic.com", "ts1.cn.mm.bing.net", "p9-pc-sign.douyinpic.com"]
+
 
 def get_user_input(param_name, prompt):
     value = input(f"{prompt}")
