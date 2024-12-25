@@ -34,6 +34,8 @@ pip install requests selenium
 python bing.py --keyword <关键词> --page <页数> --remove <是否去重> --window <窗口数量> --verbose
 ```
 
+当然，你也可以在基础的idle里运行，代码允许你在启动后手动填写一些数据。
+
 #### 参数说明
 
 - `--keyword`：想要下载的图片的简要描述。
@@ -57,6 +59,7 @@ python bing.py --keyword <关键词> --page <页数> --remove <是否去重> --w
 
 - 请确保在运行脚本之前已经安装了所有必要的依赖。
 - 请合理使用该脚本，遵守相关法律法规，不要用于下载版权受保护的图片。
+- 如果你很缺流量的话，请关闭你的代理（问就是为了测试这个脚本花了17G流量）。
 - 本脚本没有加错误处理，还请您自己多加注意。
 - There is no error handling in this script, so please note it yourself.
 
