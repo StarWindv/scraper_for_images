@@ -42,7 +42,7 @@ python bing.py --keyword <关键词> --page <页数> --remove <是否去重> --w
 - `--page`：想要下载的页数。
 - `--remove`：是否去除可能重复的图片？默认为 `True`。
 - `--window`：最大窗口数量，默认为 `2`。
-- `--verbose`：启用详细模式。
+- `--lines`：启用的线程数量。
 
 ## 功能描述
 
