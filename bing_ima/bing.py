@@ -131,7 +131,6 @@ def main():
         parser.add_argument('--page', type=int, help="想要下载的页数")
         parser.add_argument('--remove', choices=['True', 'False'], help="是否去除可能重复的图片？", default="True")
         parser.add_argument('--window', type=int, help="最大窗口数量")
-        parser.add_argument('--verbose', action='store_true', help="启用详细模式")
         
         args = parser.parse_args()
 
