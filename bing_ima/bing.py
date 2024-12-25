@@ -2,6 +2,7 @@
 # Copyright (c) 2024 StarWindv
 
 import head
+import warnings
 
 warnings.filterwarnings("ignore", message="Corrupt EXIF data.*")
 BLOCKED_DOMAINS = ["p3-pc-sign.douyinpic.com", "ts1.cn.mm.bing.net"]
