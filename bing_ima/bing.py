@@ -86,8 +86,8 @@ def create_save_dir(directory):
 
 
 # 多线程下载图片的函数
-def download_images_in_parallel(f1_links, save_directory, page_num):
-    with ThreadPoolExecutor(max_workers=16) as executor:  # 增加最大线程数为 16
+def download_images_in_parallel(f1_links, save_directory, page_num, lines):
+    with ThreadPoolExecutor(max_workers=lines) as executor:  # 增加最大线程数为 16
         futures = []
         count = 1
         image_count = 0  # 用于记录下载的图片数量
@@ -117,7 +117,7 @@ def download_page_images(page_num, keyword, save_directory):
     f1_links = get_f1_links(driver, url)
     print(f"找到 {len(f1_links)} 个 F1 链接")
 
-    download_images_in_parallel(f1_links, save_directory, page_num+1)
+    download_images_in_parallel(f1_links, save_directory, page_num+1, lines)
 
     driver.quit()
 
@@ -131,6 +131,7 @@ def main():
         parser.add_argument('--page', type=int, help="想要下载的页数")
         parser.add_argument('--remove', choices=['True', 'False'], help="是否去除可能重复的图片？", default="True")
         parser.add_argument('--window', type=int, help="最大窗口数量")
+        parser.add_argument('--lines', type=int, help="这里填入你想使用的线程数")
         
         args = parser.parse_args()
 
@@ -138,7 +139,8 @@ def main():
         first_page = args.page if args.page else get_user_input("page", "\n请输入下载的页数:\n\t ")
         remove = args.remove if args.remove else "True" 
         window = args.window if args.window else 2
-
+        global lines
+        lines = args.lines if args.lines else 16
         # 创建保存图片的目录
         save_directory = f"{keyword}_images"
         create_save_dir(save_directory)
