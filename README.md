@@ -57,6 +57,8 @@ python bing.py --keyword <关键词> --page <页数> --remove <是否去重> --w
 
 - 请确保在运行脚本之前已经安装了所有必要的依赖。
 - 请合理使用该脚本，遵守相关法律法规，不要用于下载版权受保护的图片。
+- 本脚本没有加错误处理，还请您自己多加注意。
+- There is no error handling in this script, so please note it yourself.
 
 ## 贡献者
 
