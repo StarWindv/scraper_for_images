@@ -10,10 +10,10 @@
 
 ```
 bing_ima/
-├── bing.py       # 主脚本，用于下载图片
-├── head.py       # 辅助脚本，用于设置请求头
-├── remove_dup.py # 辅助脚本，用于去除重复的图片
-└── rename.py     # 辅助脚本，用于重命名下载的图片
+├── bing.py       # 用于下载图片
+├── head.py       # 头文件
+├── remove_dup.py # 用于去除重复的图片
+└── rename.py     # 重命名去重后的图片
 ```
 
 ## 使用方法
