@@ -1,7 +1,7 @@
 # MIT License
 # Copyright (c) 2024 StarWindv
 
-import head
+from head import *
 import warnings
 
 warnings.filterwarnings("ignore", message="Corrupt EXIF data.*")
