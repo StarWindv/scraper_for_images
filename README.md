@@ -31,7 +31,7 @@ pip install requests selenium
 使用以下命令运行 `bing.py` 脚本：
 
 ```bash
-python bing.py --keyword <关键词> --page <页数> --remove <是否去重> --window <窗口数量> --verbose
+python bing.py --keyword <关键词> --page <页数> --remove <是否去重> --window <窗口数量> --lines <线程数量>
 ```
 
 当然，你也可以在基础的idle里运行，代码允许你在启动后手动填写一些数据。
@@ -42,7 +42,7 @@ python bing.py --keyword <关键词> --page <页数> --remove <是否去重> --w
 - `--page`：想要下载的页数。
 - `--remove`：是否去除可能重复的图片？默认为 `True`。
 - `--window`：最大窗口数量，默认为 `2`。
-- `--lines`：启用的线程数量。
+- `--lines`：启用的线程数量，默认为16。
 
 ## 功能描述
 
