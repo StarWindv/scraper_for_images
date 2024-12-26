@@ -1,8 +1,5 @@
 # bing_ima 项目说明文档
 
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
-
 ## 项目简介
 
 `bing_ima` 是一个用于下载图片的 Python 项目，可以从网络（默认使用 Bing）下载指定关键词的图片，并提供去重和重命名的功能。
