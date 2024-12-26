@@ -11,6 +11,7 @@
 ```
 bing_ima/
 ├── bing.py       # 用于下载图片
+|—— bing_streaming.py # 采用流式下载，一定程度上避免了内存占用过高的问题
 ├── head.py       # 头文件
 ├── remove_dup.py # 用于去除重复的图片
 └── rename.py     # 重命名去重后的图片
@@ -31,7 +32,7 @@ pip install requests selenium
 使用以下命令运行 `bing.py` 脚本：
 
 ```bash
-python bing.py --keyword <关键词> --page <页数> --remove <是否去重> --window <窗口数量> --lines <线程数量>
+python bing_streaming.py --keyword <关键词> --page <页数> --remove <是否去重> --window <窗口数量> --lines <线程数量>
 ```
 
 当然，你也可以在基础的idle里运行，代码允许你在启动后手动填写一些数据。
