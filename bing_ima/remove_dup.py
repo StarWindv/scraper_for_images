@@ -5,6 +5,7 @@ import os
 import imagehash
 from PIL import Image
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 
 def calculate_image_hash(image_path):
     try:
@@ -14,16 +15,17 @@ def calculate_image_hash(image_path):
         print(f"Error processing image {image_path}: {e}")
         return None
 
-def process_image(image_path, image_hashes, deleted_count):
+def process_image(image_path, image_hashes, deleted_count, lock):
     # 计算图片的哈希值
     image_hash = calculate_image_hash(image_path)
     if image_hash:
-        if image_hash in image_hashes:
-            os.remove(image_path)  # 删除重复图片
-            print(f"删除重复图片: {os.path.basename(image_path)}")
-            deleted_count[0] += 1
-        else:
-            image_hashes[image_hash] = image_path
+        with lock:  # 使用锁来确保对 image_hashes 的线程安全访问
+            if image_hash in image_hashes:
+                os.remove(image_path)  # 删除重复图片
+                print(f"删除重复图片: {os.path.basename(image_path)}")
+                deleted_count[0] += 1
+            else:
+                image_hashes[image_hash] = image_path
 
 def remove_duplicates(folder_path):
     if not os.path.exists(folder_path):
@@ -32,6 +34,7 @@ def remove_duplicates(folder_path):
 
     image_hashes = {}  # 存储已处理的图片的哈希值
     deleted_count = [0]  # 使用列表来存储删除计数，以便在多个线程中共享数据
+    lock = threading.Lock()  # 创建一个锁来保证线程安全
 
     # 获取文件夹中的所有图片文件
     image_files = [os.path.join(folder_path, filename) for filename in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, filename))]
@@ -40,7 +43,7 @@ def remove_duplicates(folder_path):
     with ThreadPoolExecutor(max_workers=10) as executor:
         futures = []
         for image_file in image_files:
-            futures.append(executor.submit(process_image, image_file, image_hashes, deleted_count))
+            futures.append(executor.submit(process_image, image_file, image_hashes, deleted_count, lock))
         
         # 等待所有线程完成
         for future in as_completed(futures):
