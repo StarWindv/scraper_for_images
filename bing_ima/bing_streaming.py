@@ -80,6 +80,7 @@ def download_image(url, save_path):
 
 
 def create_save_dir(directory):
+    # os.path.join('Download_Images', directory)
     if not os.path.exists(directory):
         os.makedirs(directory)
 
@@ -143,7 +144,7 @@ def main():
         global lines
         lines = args.lines if args.lines else 16
         # 创建保存图片的目录
-        save_directory = f"{keyword}_images"
+        save_directory = f"Download_Images\\{keyword}_images"
         create_save_dir(save_directory)
         first_page = int(first_page)
 
