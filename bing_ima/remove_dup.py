@@ -12,7 +12,13 @@ def calculate_image_hash(image_path):
         with Image.open(image_path) as img:
             return str(imagehash.phash(img))  # 返回图像的感知哈希值
     except Exception as e:
-        print(f"Error processing image {image_path}: {e}")
+        pil_error = ['IOError', 'OSError', 'PIL.UnidentifiedImageError', 'UnidentifiedImageError']
+        print(f"\n计算哈希时遇到错误：{e}") # 更详细的错误名称
+        e = type(e).__name__
+        # print(f"\n计算哈希时遇到错误：{e}") ## 错误类别
+        if e in pil_error:
+            os.remove(image_path)
+            print(f"已删除错误图片 {image_path}\n")
         return None
 
 def process_image(image_path, image_hashes, deleted_count, lock):
