@@ -73,11 +73,20 @@ python bing_streaming.py --keyword <关键词> --page <页数> --remove <是否�
 
 该项目遵循 [MIT 许可证](bing_ima/LICENSE)。
 
-## 免责声明
-
-本项目仅供学习与研究使用，请勿用于商业用途。使用时请确保遵守当地法律和图片版权法规。
-
 ## 贡献者
 
 - 项目由 [星灿长风v](https://github.com/StarWindv) 创建。
 - 贡献者欢迎提交 Pull Requests。
+
+## 声明
+
+- Legal Disclaimer
+THE AUTHORS AND COPYRIGHT HOLDERS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH 
+THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+ANY MODIFICATIONS MADE BY THIRD PARTIES ARE SOLELY THE RESPONSIBILITY OF THE MODIFIER.
+
+- 衍生作品需在文档或启动界面注明原始项目来源
+- 分发时需提供修改记录的摘要（如CHANGELOG文件）
+- 修改后的代码必须在文件头部添加原项目署名（如注释`Based on [Project Name] by [Your Name]`）
+- 明确禁止用原作者的名称/商标为衍生作品背书
