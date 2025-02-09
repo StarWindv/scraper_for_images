@@ -15,11 +15,12 @@
 
 ```
 bing_ima/
-├── bing.py                # 图片下载脚本
-├── bing_streaming.py      # 流式下载脚本
-├── head.py                # 请求头设置
-├── remove_dup.py          # 去除重复图片
-└── rename.py              # 图片重命名
++── new_bing.py            # 最新的图片下载脚本(**推荐!**)
++── bing_streaming.py      # 流式下载脚本
++── head.py                # 请求头设置
++── remove_dup.py          # 去除重复图片
++── rename.py              # 图片重命名
++── bing.py                # 初代脚本(可以理解为基本原理)
 ```
 
 ## 安装与使用
