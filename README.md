@@ -81,10 +81,12 @@ python bing_streaming.py --keyword <关键词> --page <页数> --remove <是否�
 ## 声明
 
 - Legal Disclaimer
+```
 THE AUTHORS AND COPYRIGHT HOLDERS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH 
 THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
 ANY MODIFICATIONS MADE BY THIRD PARTIES ARE SOLELY THE RESPONSIBILITY OF THE MODIFIER.
+```
 
 - 衍生作品需在文档或启动界面注明原始项目来源
 - 分发时需提供修改记录的摘要（如CHANGELOG文件）
