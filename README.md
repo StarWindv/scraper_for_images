@@ -71,7 +71,7 @@ python bing_streaming.py --keyword <关键词> --page <页数> --remove <是否�
 
 ## 许可证
 
-该项目遵循 [MIT 许可证](bing_ima/LICENSE)。
+该项目遵循 [MIT 许可证](./LICENSE)。
 
 ## 贡献者
 
