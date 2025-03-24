@@ -1,3 +1,6 @@
+# MIT License
+# Copyright (c) 2024 星灿长风v(StarWindv)
+
 from core.stv_parse import *
 import utils.head
 import warnings
