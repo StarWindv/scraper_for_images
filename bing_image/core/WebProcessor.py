@@ -1,3 +1,6 @@
+# MIT License
+# Copyright (c) 2024 星灿长风v(StarWindv)
+
 import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
