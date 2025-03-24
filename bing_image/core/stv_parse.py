@@ -17,8 +17,8 @@ def stv_parse():
     parser.add_argument('-l', '--lines', type=int, help="这里填入你想使用的线程数")
     parser.add_argument('-t', '--time', type=int, help="这里填入限制超时时间")
     parser.add_argument('-pl', '--plate', type=int, help="横屏=2，竖屏=1，正方形=3，无限制就空着")
-    parser.add_argument("--license", type)
-    
+    parser.add_argument('--license', action='store_true', 
+                        help='输出所用的许可证')
     args = parser.parse_args()
 
     return args
