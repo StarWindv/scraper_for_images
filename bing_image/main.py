@@ -14,6 +14,12 @@ warnings.filterwarnings("ignore", message="Corrupt EXIF data.*")
 global lines
 def main():
     args = stv_parse()
+    if args.license:
+        license_path = "../LICENSE"
+        with open(path, 'r', encoding='utf-8') as l:
+            content = l.read()
+        print(content)
+        return
     keyword = args.keyword if args.keyword else get_user_input("keyword", "请输入关键词:\n\t")
     first_page = args.page if args.page else get_user_input("page", "\n请输入下载的页数:\n\t ")
     remove = args.remove if args.remove else "True"
