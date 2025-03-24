@@ -1,3 +1,6 @@
+# MIT License
+# Copyright (c) 2024 星灿长风v(StarWindv)
+
 import os
 import imagehash
 from PIL import Image
