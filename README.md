@@ -15,14 +15,15 @@
 
 ```
 bing_image/
-├── core/
-│   ├── stv_parse.py
-│   └── WebProcessor.py
+├── __init__.py
+├── core
+│   ├── WebProcessor.py
+│   └── stv_parse.py
 ├── main.py
-├── utils/
-│   ├── head.py
-│   └── utils.py
-└── __init__.py
+└── utils
+    ├── change_text.py
+    ├── head.py
+    └── utils.py
 ```
 
 ## 安装与使用
