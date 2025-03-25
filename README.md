@@ -14,7 +14,7 @@
 ## 文件结构
 
 ```
-bing_image/
+scraper_for_images/
 ├── __init__.py
 ├── core
 │   ├── WebProcessor.py
@@ -93,5 +93,5 @@ ANY MODIFICATIONS MADE BY THIRD PARTIES ARE SOLELY THE RESPONSIBILITY OF THE MOD
 
 - 衍生作品需在文档或启动界面注明原始项目来源
 - 分发时需提供修改记录的摘要（如CHANGELOG文件）
-- 修改后的代码必须在文件头部添加原项目署名（如注释`Based on [bing_ima] by [星灿长风v(Starwindv)]`）
+- 修改后的代码必须在文件头部添加原项目署名（如注释`Based on [scraper_for_images] by [星灿长风v(Starwindv)]`）
 - 明确禁止用原作者的名称/商标为衍生作品背书
