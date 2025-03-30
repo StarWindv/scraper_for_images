@@ -49,7 +49,7 @@ def main():
                 future.result()
                 gc.collect()
 
-    except KeyboardInterrupt:
+    except KeyboardInterrupt:  # 注意，这里并不能真正捕获ctrl+c中断，也就是在多线程下载时不能中断，只能暂停去重阶段
         gc.collect()
         if input(f"{text[3]}").lower() == 'y':
             if save_directory is None:
