@@ -53,7 +53,7 @@ python main.py --keyword <关键词> --page <页数> --remove <是否去重> --w
 
 首先克隆仓库
 ```bash
-git clone https://github.com/StarWindv/scraper_for_images.git
+git clone -b package https://github.com/StarWindv/scraper_for_images.git
 ```
 
 然后导航到项目内
