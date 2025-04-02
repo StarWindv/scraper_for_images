@@ -14,7 +14,7 @@
 ## 文件结构
 
 ```
-stv_scraper
+scraper_for_images
 ├── __init__.py
 ├── core
 │   ├── WebProcessor.py
