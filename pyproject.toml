@@ -7,6 +7,7 @@ name = "stv_scraper"
 version = "0.0.0+Dev.Bing.GoogleChrome"
 authors = [
     { name = "星灿长风v(StarWindv)" },
+    { email = "starwindv.stv@gmail.com"}
 ]
 description = "Bing图片爬虫工具"
 readme = "README.md"
@@ -23,6 +24,7 @@ dependencies = [
     "imagehash>=4.3",
     "stv_utils"
 ]
+urls = { "Homepage" = "https://github.com/StarWindv/scraper_for_images/tree/package" }
 
 [project.scripts]
 stv_scraper = "stv_scraper.main:main"
