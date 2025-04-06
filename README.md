@@ -35,25 +35,7 @@ scraper_for_images
 
 ## 安装与使用
 
-### 安装依赖
-
-在运行脚本之前，需要安装以下 Python 库：
-
-```bash
-pip install requests selenium stv_utils
-```
-
-### 运行脚本
-
-使用以下命令运行 `bing_streaming.py` 脚本：
-
-```bash
-python main.py --keyword <关键词> --page <页数> --remove <是否去重> --window <窗口数量> --lines <线程数量>
-```
-
-### P.S. 第二种方法
-
-从源码构建python程序，您可以使用项目自带的 [构建文件](./pyproject.toml) 或者是自己撰写。
+从源码构建python程序，您可以使用项目自带的 [pyproject.toml](./pyproject.toml) 或者是自己撰写。
 
 首先克隆仓库
 ```bash
