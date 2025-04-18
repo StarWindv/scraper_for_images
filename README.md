@@ -2,8 +2,6 @@
 
 **注意, 此分支不能直接运行，必须要安装好才可以使用**
 
-**如果您想使用类似于`python fillname.py`的命令来使用，那么请移步[主分支](https://github.com/StarWindv/scraper_for_images/tree/main)**
-
 ## 项目简介
 
 `scraper_for_images` 是一个用于下载图片的 Python 项目，可以从网络下载指定关键词的图片，并提供去重和重命名的功能。
