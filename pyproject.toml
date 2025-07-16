@@ -27,4 +27,4 @@ dependencies = [
 urls = { "Homepage" = "https://github.com/StarWindv/scraper_for_images/tree/package" }
 
 [project.scripts]
-stv_scraper = "stv_scraper.main:main"
+sbs = "stv_scraper.main:main"
